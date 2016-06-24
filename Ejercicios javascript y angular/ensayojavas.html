@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> </title>
+</head>
+<body>
+
+<!--
+<p>Click al bot&oacute;n para sumar</p>
+<button onclick="alert(sumas(4,8))">Sumar</button>
+
+
+<script>
+
+function sumas(numero1,numero2) {
+    
+    var Suma = numero1 + numero2;
+    return Suma;
+    
+}
+</script>
+-->
+<label>Nombre: </label>
+<input id="nombreId" type="text" name="nombre">
+
+<script>
+	function obtenerNombre(){
+     
+     var nombre = document.getElementById("nombreId").value;
+
+     return nombre;
+	}
+</script>
+
+<button onclick="alert(obtenerNombre())">Click</button>
+</body>
+</html>

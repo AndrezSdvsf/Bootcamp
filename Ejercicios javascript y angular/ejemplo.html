@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<a href=http://www.google.com id= “enlace” onmouseover= "cambiar()" onmouseout= "cambiar()"> entra a google </a>
+
+<script>
+	function cambiar() {
+		 if(document.getElementById("enlace").style.color != "red"){
+
+			 document.getElementById("enlace").style.color = "red";
+			 document.getElementById("enlace").style.textDecoration = "none";  
+		} else {
+			 document.getElementById("enlace").style.color = "blue";
+			 document.getElementById("enlace").style.textDecoration = "underline";  
+		}
+	}
+</script>
+
+
+
+</body>
+</html>

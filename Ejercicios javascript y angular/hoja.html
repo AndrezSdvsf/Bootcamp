@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+     
+</head>
+
+<body>
+
+     <center><h1>Hoja de vida</h1></center>
+
+<br>
+<br>
+         <section id="datos">
+
+         <h2>Datos personales</h2>
+
+
+             <form>
+
+                 <label>Nombres: </label>
+                 <input id="usuarios" type="text" name="usuario"><br><br>
+
+                 <label>Apellidos: </label>
+                 <input id="apellidos" type="text" name="apellido"><br><br>
+
+                 <label>Tipo de documento: </label><br>
+
+                 <label>Cedula de ciudadania </label>
+                 <input type="radio" name="radio" value="Cedula de ciudadania"><br>
+
+                 <label>Tarjeta de identidad </label>
+                 <input type="radio" name="radio" value="Tarjeta de identidad"> <br>
+
+                 <label>Cedula de extranjeria </label>
+                 <input type="radio" name="radio" value="Cedula de extranjeria"><br><br>
+
+                 <label>Numero de documento: </label>
+                 <input id="cedula" type="text" name="nDocumento"><br><br>
+
+                 <label>fecha de nacimiento: </label>
+                 <input id="fecha" type="date" name="nacimiento"><br><br>
+
+                 <label>edad: </label>
+                 <input id="edad" type="text" name="Edad"><br><br>
+
+                 <label>direccion: </label>
+                 <input id="direccion" type="text" name="Direccion"><br><br>
+
+                 <label>numero celular: </label>
+                 <input id="numero" type="text" name="Numero"><br><br>
+
+             </form>
+         
+         <script>
+
+             function obtenerNombres(){
+             var Nombres = document.getElementById("usuarios").value;
+             return "Su nombre es: " + Nombres;
+
+             }
+
+             function obtenerApellidos(){
+             var Apellidos = document.getElementById("apellidos").value;
+             return "Sus apellidos son: " + Apellidos;
+             }
+
+             function obtenerCedula(){
+             var Cedula = document.getElementById("cedula").value;
+             return "Su numero de documento es: " + Cedula;
+             }
+
+             function obtenerFecha(){
+             var Fecha = document.getElementById("fecha").value;
+             return "Su fecha de nacimiento es: " + Fecha;
+             }
+
+             function obtenerEdad(){
+             var anos = document.getElementById("edad").value;
+             return "Su edad es: " + anos;
+             }
+
+             function obtenerDireccion(){
+             var Carrera = document.getElementById("direccion").value;
+             return "Su direccion es: " + Carrera;
+             }
+
+             function obtenerNumero(){
+             var celular = document.getElementById("numero").value;
+             return "Su numero de celular es: " + celular;
+             }
+
+             function obtenerRadio(){
+             var radioList = document.getElementsByName("radio");
+             console.log(radioList);
+             var opcion;
+             var tipo;
+
+                 for(var i = 0; i < radioList.length; i++){
+
+                 console.log(radioList[i].checked);
+
+                     if (radioList[i].checked) {
+                     tipo = radioList[i].value;
+                     
+                     break;
+                     }
+                
+                 }
+
+                 /*if(opcion == 0){
+                 tipo = "El tipo de documento es cedula de ciudadania"
+
+                 } else if(opcion == 1){
+
+                   tipo = "El tipo de documento es Tarjeta de identidad"
+
+                   } else{
+
+                     tipo = "EL tipo de documento es cedula de extranjeria"
+
+                     }*/
+
+                 return "El tipo de documento es: " + tipo;
+
+                 }
+
+         </script>
+
+
+
+ <button onclick="alert(obtenerNombres()); alert(obtenerApellidos()); alert(obtenerRadio()); alert(obtenerCedula()); alert(obtenerFecha()); alert(obtenerEdad()); alert(obtenerDireccion()); alert(obtenerNumero())">Enviar</button>
+
+</body>
+</html>
