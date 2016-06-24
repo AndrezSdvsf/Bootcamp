@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src=angular.min.js></script>
+	<title></title>
+</head>
+<body>
+<div ng-app="miapp" ng-init="firstname='';lastname=''" ng-controller="micontrolador">
+
+
+    Primer nombre: <input type=text ng-model=firstname><br>
+    apellido: <input type=text ng-model=lastname><br>
+    Hola como estas: {{firstname + "" + lastname}}
+
+
+</div>
+<script>
+	var miapp = angular.module("miapp", []);
+	miapp.controller('micontrolador', function($scope){
+    
+      $scope.firstname="";
+      $scope.lastname=""
+	});
+
+</script>
+</body>
+</html>

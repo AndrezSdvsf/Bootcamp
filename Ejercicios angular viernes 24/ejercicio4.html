@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<form action="#" method="post">
+<table>
+<tr>
+ <td>Twitter:</td>
+ <td><textarea name="texto" onKeyDown="cuenta()" onKeyUp="cuenta()" maxlength="140"></textarea></td>
+ </tr>
+ <tr>
+    <td><input type="text" name=caracteres size=4></td>
+</tr>
+</table>
+</form> 
+
+
+<script>
+function cuenta(){
+       document.forms[0].caracteres.value = document.forms[0].texto.value.length
+}
+</script> 
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src=angular.min.js></script>
+	<title></title>
+</head>
+<body>
+<div ng-app ng-init=frase=''>
+
+
+    Primer nombre: <input type=text ng-model=frase><br>
+   
+    {{cadenaInvertida}}
+
+
+</div>
+<script>
+	  function invertir(frase) {
+      var x = frase.length;
+      var cadenaInvertida = "";
+     
+      while (x>=0) {
+        cadenaInvertida = cadenaInvertida + frase.charAt(x);
+        x--;
+      }
+      return cadenaInvertida;
+    }
+
+</script>
+</body>
+</html>
