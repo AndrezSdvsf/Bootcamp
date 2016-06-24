@@ -1,0 +1,36 @@
+body{
+	background: #AFEEEE;
+}
+
+h1{
+	background: white;
+	font-size: 38px;
+    font-style: italic;
+    color: #333;
+    padding: 10px;
+    text-shadow: -1px -1px 0px #101010, 1px 1px 0px #505050;
+}
+
+h2{
+	background: #5F9EA0;
+	color: black;
+	font-family: verdana;
+}
+
+h3{
+	color:#4682B4;
+
+}
+
+p{
+	color:#4169E1;
+}
+
+#subtitulo{
+	background: white;
+}
+
+#linea{
+	background: white;
+}
+

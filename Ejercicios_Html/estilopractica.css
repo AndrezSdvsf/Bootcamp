@@ -1,0 +1,45 @@
+.static{
+	position: static;
+}
+
+.relative{
+	position: relative;
+	top: 180px;
+	left: 20px;
+	background-color: gray;
+	width: 500px;
+}
+
+.fixed{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 200px;
+	background-color: gray;
+}
+
+.absolute{
+    position: absolute;
+    top: 120px;
+    right: 0;
+    width: 300px;
+    height: 200px;
+}
+
+html{
+
+	font:75% Verdana,sans-serif;
+}
+
+p{
+	color:cyan;
+}
+
+#especial{
+	background-color: red;
+	color: yellow;
+}
+
+h2{
+	color: #000; font-weight: bold;font-size: 18px;
+}
