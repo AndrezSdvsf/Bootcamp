@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src=angular.min.js></script>
+	<title></title>
+</head>
+<body>
+<div ng-app="miapp" ng-init="quantity=2;cost=5;firstname='';lastname=''; points=[1,15,19,2,40]; names=[{name:'luz',country:'colombia'}]" ng-controller="micontrolador">
+
+	<p>name: <input type=text ng-model=name></p>
+	<p ng-bind=name></p>
+
+	<p>Mi proceso matematico: {{20+20}}</p>
+    
+
+	<p>total en dolares: {{quantity * cost}}</p>
+
+	<button ng-click="count = count + 1">presioname ome!</button>
+	<p>{{ count }}</p>
+
+    <p>el nombre completo: {{firstname + "" + lastname}}</p>
+
+    Primer nombre: <input type=text ng-model=firstname><br>
+    apellido: <input type=text ng-model=lastname><br>
+    Nombre completo: {{firstname + "" + lastname}}
+
+    <p>el tercer resultado es: {{points[2]}}</p>
+
+    <p>looping with ng-repeat:</p>
+    <ul>
+    	<li ng-repeat="x in names | orderBy:'country'">
+    		{{x.name +',' + x.country}}
+    	</li>
+    </ul>
+
+    <p>nombre: <input type=text ng-model=nombre></p>
+    <p>En mayusculas {{ nombre|uppercase }}</p>
+
+
+
+</div>
+<script>
+	var miapp = angular.module("miapp", []);
+	miapp.controller('micontrolador', function($scope){
+      $scope.count = 0;
+      $scope.firstname="";
+      $scope.lastname=""
+	});
+
+</script>
+</body>
+</html>

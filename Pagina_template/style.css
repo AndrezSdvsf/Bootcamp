@@ -1,0 +1,30 @@
+body{
+	/* Asignacion de color de fondo*/
+	background-color: #3CB371;
+	/* asignacion del tipo de fuente */
+	font-family: arial;
+}
+p:hover {
+color: blue;
+}
+
+.lista {
+	/* tamaño de fuente */
+	font-size: 20px;
+}
+
+
+
+#parrafo{
+	border: 2px solid blue;
+}
+
+#titulo{
+	border: 4px solid blue;
+}
+
+#parrafo2{
+	font-size: 80px;
+	border: 2px solid blue;
+}
+
