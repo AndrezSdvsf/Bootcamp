@@ -1,21 +1,24 @@
+vector = []
 for i in 0...1000
-vector [i] = i * rand(1...100)
+vector.insert(i, rand(1...1000))
 end
 
 print "digite numero a consultar del 0 al 9"
 numero = gets.chomp.to_i
 
 terminados = []
-vector.each do |num|
+posicion = 0
 
 for i in 0...vector.length
 
-if (num % 10 == numero)
+if (vector[i] % 10 == numero)
 
-terminados[i] = num
+	terminados[posicion] = vector[i]
+	posicion = posicion + 1
 
 end 
 end
-end
+
 
 print terminados
+
