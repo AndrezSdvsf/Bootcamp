@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Numero factura:</strong>
+  <%= @ticket.numero_factura %>
+</p>
+
+<p>
+  <strong>Productos:</strong>
+  <%= @ticket.productos %>
+</p>
+
+<p>
+  <strong>Puntos:</strong>
+  <%= @ticket.puntos %>
+</p>
+
+<p>
+  <strong>Costo:</strong>
+  <%= @ticket.costo %>
+</p>
+
+<p>
+  <strong>Iva:</strong>
+  <%= @ticket.iva %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @ticket.total %>
+</p>
+
+<%= link_to 'Edit', edit_ticket_path(@ticket) %> |
+<%= link_to 'Back', tickets_path %>

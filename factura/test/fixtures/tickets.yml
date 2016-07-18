@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  numero_factura: MyString
+  productos: MyString
+  puntos: 1
+  costo: 1.5
+  iva: 1.5
+  total: 1.5
+
+two:
+  numero_factura: MyString
+  productos: MyString
+  puntos: 1
+  costo: 1.5
+  iva: 1.5
+  total: 1.5
